@@ -1,0 +1,34 @@
+
+
+.leaflet-container{
+    height: 60vh;
+}
+
+.head_wrapper{
+    padding: 5.25rem 6rem ;
+    background-image: url("../images/pattern-bg-desktop.png");
+    background-size: 1920px;
+    color: white;
+    font-size: 2rem;
+}
+.address_input{
+    border-radius: 10px 0 0 10px;
+    width: 25rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.find-btn{
+    border-radius: 0 10px 10px 0;
+    background-color: black;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.find-btn:hover{
+    color: black;
+    background-color: white;
+}

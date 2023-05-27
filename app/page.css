@@ -1,19 +1,23 @@
-
-
 .leaflet-container{
-    height: 60vh;
+    height: 80vh;
+}
+
+.input_wrapper{
+    margin-bottom: 3rem;
 }
 
 .head_wrapper{
-    padding: 5.25rem 6rem ;
+    flex-wrap: nowrap;
     background-image: url("../images/pattern-bg-desktop.png");
     background-size: 1920px;
     color: white;
     font-size: 2rem;
+    transition: all 1s ease-in-out;
 }
 .address_input{
+    display: inline;
     border-radius: 10px 0 0 10px;
-    width: 25rem;
+    width: 15rem;
     padding: 0.5rem;
     font-size: 1.5rem;
     color: black;

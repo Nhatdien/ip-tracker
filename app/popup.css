@@ -28,6 +28,10 @@
     border-right: 0.5px solid gray;
 }
 
+.link{
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
     .popup-wrapper{
         flex-direction: column;

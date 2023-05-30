@@ -13,14 +13,13 @@ export default function Home() {
   const [longitude, setLongitude] = useState<number>();
   const [err, setErr] = useState<any>();
 
-
-  
   const getData = async () => {
     try{
     const apiKey = "at_shbxSO9sIWiAuxiEfhUcj4FGY5jeU"
     let response = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ip}`);
     let data = await response.json();
     setApiData(data);
+  
     setLatitude(data.location.lat);
     setLongitude(data.location.lng);
     setErr("");
@@ -40,7 +39,7 @@ export default function Home() {
     // }
 
     if (err && err.length > 0) {
-      return <div>{err}</div>
+      return <div className='rounded-lg p-3 mt-8 text-xs bg-red-500'><b>Please type a valid IP address!</b></div>
     }
 
     if (apiData) {

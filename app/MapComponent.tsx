@@ -1,4 +1,3 @@
-"use client"
 import "leaflet/dist/leaflet.css"
 import { Icon } from 'leaflet'
 import { MapContainer, TileLayer, useMap, Popup, Marker } from 'react-leaflet'
@@ -20,7 +19,7 @@ const customIcon = new Icon({
 
 const MapComponent = ({latitude, longitude}:cordinate) => {
    return <>
-   <MapContainer center={[latitude,longitude]} zoom={12} scrollWheelZoom={false}>
+   <MapContainer center={[latitude,longitude]} zoom={15} scrollWheelZoom={false}>
    
     <MyComponent latitude={latitude} longitude={longitude}/>
     <TileLayer
@@ -29,8 +28,6 @@ const MapComponent = ({latitude, longitude}:cordinate) => {
     />
     
      <Marker position={[latitude, longitude]} icon={customIcon}>
-    <Popup>
-    </Popup>
   </Marker>
   </MapContainer>
   </>
